@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-container": "#ee9800",
+          "surface": "#10141a",
+          "on-tertiary": "#67001b",
+          "surface-container-highest": "#31353c",
+          "on-background": "#dfe2eb",
+          "outline-variant": "#3b4a44",
+          "on-secondary-fixed-variant": "#653e00",
+          "surface-dim": "#10141a",
+          "on-tertiary-container": "#b80538",
+          "surface-variant": "#31353c",
+          "outline": "#84948d",
+          "tertiary-container": "#ffc7c9",
+          "on-tertiary-fixed": "#40000d",
+          "on-tertiary-fixed-variant": "#92002a",
+          "surface-tint": "#00e0b3",
+          "on-secondary": "#472a00",
+          "surface-bright": "#353940",
+          "surface-container-high": "#262a31",
+          "tertiary-fixed": "#ffdadb",
+          "on-primary": "#00382b",
+          "on-secondary-fixed": "#2a1700",
+          "tertiary-fixed-dim": "#ffb2b7",
+          "primary-fixed": "#32fece",
+          "error-container": "#93000a",
+          "primary-fixed-dim": "#00e0b3",
+          "background": "#10141a",
+          "tertiary": "#ffeded",
+          "inverse-surface": "#dfe2eb",
+          "inverse-on-surface": "#2d3137",
+          "on-primary-fixed": "#002118",
+          "surface-container-lowest": "#0a0e14",
+          "secondary-fixed-dim": "#ffb95f",
+          "error": "#ffb4ab",
+          "on-error-container": "#ffdad6",
+          "on-surface": "#dfe2eb",
+          "on-primary-container": "#006852",
+          "primary-container": "#00f0c0",
+          "inverse-primary": "#006b54",
+          "secondary-fixed": "#ffddb8",
+          "surface-container": "#1c2026",
+          "on-error": "#690005",
+          "primary": "#bbffe6",
+          "on-surface-variant": "#b9cac2",
+          "on-secondary-container": "#5b3800",
+          "secondary": "#ffb95f",
+          "on-primary-fixed-variant": "#00513f",
+          "surface-container-low": "#181c22"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "gutter": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "gutter-desktop": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin-desktop": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Space Grotesk"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Space Grotesk"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "JetBrains Mono"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "label-md": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface select-none"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_12px_rgba(0,240,192,0.1)]"><div class="h-20 w-full px-gutter-desktop flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center p-space-xs bg-surface-container-low rounded"><span class="material-symbols-outlined text-primary-container animate-pulse text-lg">satellite_alt</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary tracking-wider">METHANE COPILOT</span><span class="font-label-sm text-label-sm text-outline-variant">//</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-widest">ORBITAL TELEMETRY</span></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="flex h-1.5 w-1.5 rounded-full bg-primary-container animate-ping"></span><span>LIVE SYNC</span><span class="text-outline-variant">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">LAT 31.8457° N • LON 102.3678° W</span><span class="text-outline-variant">|</span><span class="text-primary-fixed-dim font-label-sm text-label-sm">SIGNAL LOCK: 99.84%</span></div></div><div class="hidden xl:flex items-center px-space-md py-space-xs bg-surface-container-low rounded"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase">EVENT ID: PERMIAN-CH4-9842 • SATELLITE: ENMAP-HYPER • ACQUISITION: 14:28:09 UTC</span></div></div><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm px-space-md py-space-xs bg-error-container/20 rounded"><span class="material-symbols-outlined text-error text-base animate-pulse">warning</span><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-error">ACTIVE PLUME DETECTED</span><span class="font-label-md text-label-md text-tertiary-fixed font-bold">1,420 kg/hr ± 42</span></div></div><div class="hidden md:flex flex-col items-end px-space-md py-space-xs bg-surface-container-low rounded"><span class="font-label-sm text-label-sm text-outline">UTC MISSION CLOCK</span><span class="font-label-md text-label-md text-on-background tracking-wider">2025.05.18 // 14:42:19 UTC</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-primary-fixed">OP-882 // FLIGHT LEAD</span><span class="font-label-sm text-label-sm text-outline">SPECTRAL ANALYSIS</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UKrXPLIYKIVq-3RZATblIHhyDe7PRr9G6_RpdZBj-Xalxo_nPIiRvc30lSyh0j1aVhAHhMzJqnIyVGk-On3hcvJX2ta86lCCc61x7B_MG9_TIusBOxrf79upV21kZwsTT2qBTQinV7E--oRqhnExCzIK6YiN2ixdQd-DoNKDKJ0pCSpgkHm6GaHCyMUF8G_s6nSpWGtC4TIpPXZv17jQqIyfZ-PoTJW3mOBuFTA4n4CWFciPm44Wv5xPfF"/></div></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline-variant"><span class="text-primary-container font-label-sm text-label-sm">LIFECYCLE PIPELINE</span><span>[</span><span class="text-on-surface">DETECT</span><span class="text-primary-container">→</span><span class="text-on-surface">BILL</span><span class="text-primary-container">→</span><span class="text-on-surface">HEAL</span><span class="text-primary-container">→</span><span class="text-on-surface">CREDIT</span><span>]</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold"><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="plume-detection" href="#"><span>01 SOURCE</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-error animate-ping"></span></a><a aria-current="page" class="px-space-md py-space-xs rounded transition-all flex items-center gap-space-xs bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold" data-path="tax-billing" href="#"><span>02 BILL</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span></a><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="field-dispatch" href="#"><span>03 HEAL</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-outline"></span></a><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="carbon-registry" href="#"><span>04 CREDIT</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span></a></nav><div class="hidden lg:flex items-center gap-space-md font-label-sm text-label-sm text-outline"><span class="text-outline-variant">HUD CALIBRATED // WGS84 EPSG:4326</span></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md px-space-sm"><div class="flex flex-col gap-space-md"><div class="px-space-sm flex items-center justify-between"><span class="font-label-sm text-label-sm text-outline tracking-wider">INSTRUMENT RAILS</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container">ONLINE</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md font-bold"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="plume-detection" href="#"><span class="material-symbols-outlined text-base">radar</span>Plume Detection</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="satellite-orbit" href="#"><span class="material-symbols-outlined text-base">public</span>Constellation Array</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="spectral-flux" href="#"><span class="material-symbols-outlined text-base">ssid_chart</span>Spectral Radiance</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-all bg-primary-container text-on-primary-container font-label-md text-label-md font-bold" data-path="tax-billing" href="#"><span class="material-symbols-outlined text-base">receipt_long</span>WEC Fiscal Ledger</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="field-dispatch" href="#"><span class="material-symbols-outlined text-base">engineering</span>Repair Crews</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="carbon-registry" href="#"><span class="material-symbols-outlined text-base">token</span>Carbon Mint</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-telemetry" href="#"><span class="material-symbols-outlined text-base">terminal</span>Sensor Raw Feed</a></nav></div><div class="flex flex-col gap-space-sm px-space-sm pt-space-md bg-surface-container-low/40 rounded"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-outline">SENSOR POD 04</span><span class="text-primary">OPTIMAL</span></div><div class="w-full bg-surface-container-highest h-1 rounded"><div class="bg-primary-container h-1 rounded" style="width: 86%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-outline-variant"><span>FLUX: 2,341 nm</span><span>SNR: 34.2 dB</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full px-gutter-desktop min-h-screen bg-surface-container-lowest"><div class="flex flex-col w-full pb-space-xl">
+<!-- Sub-Header Status Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm mb-space-lg bg-surface-container-low px-space-md rounded shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="text-primary-container font-bold">PIPELINE PHASE 02</span>
+<span class="text-outline-variant">::</span>
+<span class="text-on-surface uppercase">WEC FISCAL LEDGER &amp; STATUTORY LIABILITY RUNTIME</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-secondary">IRA WEC TIER-2 ACTIVE</span>
+</div>
+<div class="flex items-center gap-space-lg font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="text-outline">ACCRUAL CLOCK:</span>
+<span class="text-primary font-bold">04:18:22 T-LIVE</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="text-outline">VALUATION MODEL:</span>
+<span class="text-on-background">OMB-EPA / HENRY HUB NYMEX</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>BILLABLE EVENT</span>
+</div>
+</div>
+</div>
+<!-- Primary Dominant Hero Visual Module -->
+<div class="relative w-full rounded-lg bg-surface p-space-lg lg:p-space-xl shadow-xl overflow-hidden">
+<!-- Ambient Glow Backdrops -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-20 w-80 h-80 bg-error/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- HUD Grid Watermark & Identification -->
+<div class="flex flex-wrap items-start justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary-fixed-dim tracking-wider uppercase">
+<span>// LEDGER REGULATORY ENGINE: ACT-424 //</span>
+<span class="text-outline-variant">|</span>
+<span>BASIN: PERMIAN DELAWARE</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface mt-space-xs">Cumulative Real-Time Incident Exposure</p>
+</div>
+<!-- Quick Telemetry HUD Pills -->
+<div class="flex flex-wrap items-center gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high rounded text-on-surface">
+<span class="text-outline">DAILY ACCRUAL:</span>
+<span class="text-error font-bold tracking-wide">+$14,200/24h</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-error-container/20 text-error rounded">
+<span class="material-symbols-outlined text-xs">gavel</span>
+<span class="font-bold">AUDIT RISK: CRITICAL</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high text-secondary-fixed-dim rounded">
+<span class="material-symbols-outlined text-xs">timer</span>
+<span>WINDOW: 72h REMAINING</span>
+</div>
+</div>
+</div>
+<!-- The Grand Payoff Counter -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mb-space-xl pt-space-xs">
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Total Financial Exposure Accrued</span>
+<div class="flex flex-wrap items-baseline gap-space-sm mt-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary-container tracking-tight drop-shadow-[0_0_24px_rgba(0,240,192,0.45)]">$361,448</span>
+<span class="font-label-md text-label-md text-outline">USD NET LIQUIDATION VALUE</span>
+</div>
+<div class="flex items-center gap-space-md mt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>MASS RATE: <strong class="text-on-surface">1,420 kg/hr</strong></span>
+<span class="text-outline-variant">•</span>
+<span>CUMULATIVE PLUME: <strong class="text-on-surface">12.4t CH₄</strong></span>
+<span class="text-outline-variant">•</span>
+<span>UNCERTAINTY: <strong class="text-primary-fixed-dim">± 3.1%</strong></span>
+</div>
+</div>
+<!-- Action Dispatch Prompt -->
+<div class="lg:col-span-5 flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-space-md">
+<div class="flex flex-col text-right hidden sm:flex">
+<span class="font-label-sm text-label-sm text-outline">AVOIDABLE ACCRUAL</span>
+<span class="font-label-md text-label-md text-secondary">$591.66 / hour</span>
+</div>
+<a class="px-space-lg py-space-md bg-primary-container hover:bg-primary text-on-primary-container rounded font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-all shadow-[0_0_20px_rgba(0,240,192,0.35)] hover:shadow-[0_0_28px_rgba(0,240,192,0.55)]" data-path="field-dispatch" href="#">
+<span>DISPATCH REPAIR CREW (HEAL)</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- DOMINANT COMPARATIVE FINANCIAL EXPOSURE VISUALIZATION -->
+<div class="bg-surface-container-lowest p-space-md lg:p-space-lg rounded-lg shadow-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mb-space-lg">
+<span class="text-on-surface font-semibold tracking-wider">// STATUTORY &amp; ECONOMIC IMPACT VECTOR SCALE //</span>
+<span>BENCHMARK COMPARATOR: 100% SCALE = $218,600 (CLIMATE DAMAGE)</span>
+</div>
+<!-- Bar 1: Lost Commodity Value ($31,248) -->
+<div class="mb-space-lg group">
+<div class="flex flex-wrap items-baseline justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-md text-headline-md text-on-surface">01. Lost Commodity Value</span>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">[PRODUCER REVENUE LOSS]</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-secondary font-bold">$31,248</span>
+<span class="font-label-sm text-label-sm text-outline">USD (8.6%)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-7">
+<div class="w-full bg-surface-container-high h-6 rounded overflow-hidden p-0.5 flex">
+<div class="bg-secondary h-full rounded transition-all duration-700 shadow-[0_0_12px_rgba(255,185,95,0.35)]" style="width: 14.3%;"></div>
+</div>
+</div>
+<!-- Small Formula Annotation Direct Lateral Placement -->
+<div class="lg:col-span-5 bg-surface-container-low px-space-md py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">calculate</span>
+<code class="font-label-sm text-label-sm text-secondary-fixed-dim leading-snug break-all">
+              12.4t CH4 × 52 MMBtu/t × $4.85/MMBtu Spot Henry Hub
+            </code>
+</div>
+</div>
+</div>
+<!-- Bar 2: Carbon Price / IRA Super-Emitter Penalty ($111,600) -->
+<div class="mb-space-lg group">
+<div class="flex flex-wrap items-baseline justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-headline-md text-headline-md text-on-surface">02. Carbon Price / IRA WEC Penalty</span>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">[METHANE EMISSIONS CHARGE]</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">$111,600</span>
+<span class="font-label-sm text-label-sm text-outline">USD (30.9%)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-7">
+<div class="w-full bg-surface-container-high h-6 rounded overflow-hidden p-0.5 flex">
+<div class="bg-primary-container h-full rounded transition-all duration-700 shadow-[0_0_14px_rgba(0,240,192,0.4)]" style="width: 51.05%;"></div>
+</div>
+</div>
+<!-- Small Formula Annotation Direct Lateral Placement -->
+<div class="lg:col-span-5 bg-surface-container-low px-space-md py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">calculate</span>
+<code class="font-label-sm text-label-sm text-primary-fixed-dim leading-snug break-all">
+              12.4t CH4 × 120 (GWP20 factor) × $75/tCO2e (EPA Clean Air Act Tier-2)
+            </code>
+</div>
+</div>
+</div>
+<!-- Bar 3: Climate Damage Social Cost ($218,600) -->
+<div class="mb-space-md group">
+<div class="flex flex-wrap items-baseline justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-headline-md text-headline-md text-on-surface">03. Climate Damage Social Cost</span>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">[GLOBAL STATUTORY DAMAGE]</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-error font-bold">$218,600</span>
+<span class="font-label-sm text-label-sm text-outline">USD (60.5%)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-7">
+<div class="w-full bg-surface-container-high h-6 rounded overflow-hidden p-0.5 flex">
+<div class="bg-error h-full rounded transition-all duration-700 shadow-[0_0_16px_rgba(255,180,171,0.4)]" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Small Formula Annotation Direct Lateral Placement -->
+<div class="lg:col-span-5 bg-surface-container-low px-space-md py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-sm">calculate</span>
+<code class="font-label-sm text-label-sm text-tertiary-fixed leading-snug break-all">
+              12.4t CH4 × $17,629/t Social Cost of Methane (OMB 2024 revised)
+            </code>
+</div>
+</div>
+</div>
+<!-- Linear Discretized Ruler Gauge Reference -->
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-outline-variant">
+<span>$0k</span>
+<span>$50k</span>
+<span>$100k [IRA THRESHOLD]</span>
+<span>$150k</span>
+<span>$200k</span>
+<span class="text-error">$218.6k [MAX VALUE]</span>
+</div>
+</div>
+</div>
+<!-- Operational Ledger Breakdown & Satellite Confirmation Modules -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md mt-space-lg">
+<!-- Audit Card 1: Statutory Exposure Breakdown -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">// COMPLIANCE PENALTY CODE //</span>
+<span class="material-symbols-outlined text-error text-base">policy</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">IRA Section 136 Methane Rule</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+          Facility Permian-Pad-09 exceeds the 25,000 mt CO2e reporting floor. Under 40 CFR Part 98 Subpart W, uncombusted vented natural gas is assessed at <strong class="text-primary-container">$900/t CH4</strong> in Year 1 escalating to <strong class="text-secondary">$1,500/t CH4</strong>.
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">AUDIT SUBMISSION DEADLINE:</span>
+<span class="text-error font-bold">MAY 21, 2025 // 14:00 UTC</span>
+</div>
+</div>
+</div>
+<!-- Audit Card 2: Satellite Ground Proof Image Placeholder -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">// SPECTRAL PROOF PACKET //</span>
+<span class="material-symbols-outlined text-primary-container text-base">satellite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">SWIR Absorption Evidence</h3>
+<div class="relative w-full h-32 rounded overflow-hidden mt-space-xs">
+<img class="w-full h-full object-cover" data-alt="Satellite hyperspectral infrared radiance imagery of methane gas plume expanding from an industrial pipeline manifold in Texas Permian Basin. High-contrast false color thermal plume glowing in bioluminescent teal and amber against an obsidian desert surface. Sharp Cartesian crosshairs, reticle telemetry markers, and diagnostic bounding boxes in dark mission control room style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZRt3a9TbsIJcqTG2RzN1hrcstuTlpX9AU9rl_MbdeFQomuoZ29tUwqzZpCt5wB_XKueDRsSpTMo2MBG7kGsiDGOHbQbHpZ7aUYTMnAm7ext-aNBtgw0ACfWBximRQLeSE3b5jH94m41t2WY4n4amiiuMyiZYj5bphocJBQTvPKkfQNzA_Yw8nHMz5J3S53rhSdmwdMKFY-dnNnwAHQJ8C9PbW-6p2qEaxC2wAb0EAUvQVejVkctsDKg"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/80 font-label-sm text-label-sm text-primary-container">
+            SWIR 2,341 nm
+          </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/80 font-label-sm text-label-sm text-error font-bold">
+            LAT 31.8457° N
+          </div>
+</div>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>ENMAP-HYPER CALIBRATED</span>
+<span class="text-primary font-bold">VERIFIED 99.84%</span>
+</div>
+</div>
+<!-- Audit Card 3: Interactive Ledger Mitigation Simulator -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase">// ACCRUAL MITIGATION PROJECTION //</span>
+<span class="material-symbols-outlined text-secondary text-base">trending_down</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Capping Window Valuation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+          Valve shut-off within the remaining <strong class="text-primary">72 hours</strong> caps total fiscal liability at <strong class="text-on-background font-bold">$404,048</strong>, avoiding non-compliance penalties up to <strong class="text-error font-bold">$1,250,000</strong>.
+        </p>
+</div>
+<!-- Segmented Bar -->
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline">SEVERITY PROGRESSION</span>
+<span class="text-error font-bold">STAGE 4 OF 5</span>
+</div>
+<div class="grid grid-cols-5 gap-1 h-2">
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-secondary rounded-xs"></div>
+<div class="bg-error rounded-xs animate-pulse"></div>
+<div class="bg-surface-container-highest rounded-xs"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<span class="text-on-surface-variant">CREW DISPATCH STATUS:</span>
+<span class="text-secondary-fixed font-bold uppercase">STANDBY FOR DISPATCH</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tactical Event Log Table -->
+<div class="mt-space-lg bg-surface rounded-lg p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="text-primary-fixed uppercase tracking-wider">// REAL-TIME CHRONOLOGICAL EXPOSURE STREAM //</span>
+<span>•</span>
+<span>EPA AUDIT LOG #TX-9842</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-sm">download</span>
+<a class="hover:underline" href="#">EXPORT AUDIT DOSSIER (.CSV / XBRL)</a>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-label-sm text-label-sm">
+<thead>
+<tr class="text-outline uppercase bg-surface-container-low">
+<th class="py-space-xs px-space-sm font-semibold">UTC TIMESTAMP</th>
+<th class="py-space-xs px-space-sm font-semibold">EVENT PARAMETER</th>
+<th class="py-space-xs px-space-sm font-semibold">MASS QUANTUM</th>
+<th class="py-space-xs px-space-sm font-semibold">WEC LEVY RATE</th>
+<th class="py-space-xs px-space-sm font-semibold">INCREMENTAL ACCRUAL</th>
+<th class="py-space-xs px-space-sm font-semibold text-right">RUNNING LEDGER</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-sm font-mono text-outline">14:42:19 UTC</td>
+<td class="py-space-sm px-space-sm flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>Plume Plume Radiance Peak 1,420 kg/hr</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">0.394 kg/s</td>
+<td class="py-space-sm px-space-sm text-outline">$900.00 / t</td>
+<td class="py-space-sm px-space-sm text-error font-bold">+$164.20</td>
+<td class="py-space-sm px-space-sm font-bold text-primary text-right">$361,448.00</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-sm font-mono text-outline">14:30:00 UTC</td>
+<td class="py-space-sm px-space-sm">Satellite SWIR Sync Lock Confirmed</td>
+<td class="py-space-sm px-space-sm text-on-surface">0.388 kg/s</td>
+<td class="py-space-sm px-space-sm text-outline">$900.00 / t</td>
+<td class="py-space-sm px-space-sm text-secondary font-bold">+$158.40</td>
+<td class="py-space-sm px-space-sm font-bold text-primary text-right">$361,283.80</td>
+</tr>
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-sm font-mono text-outline">14:15:00 UTC</td>
+<td class="py-space-sm px-space-sm">Henry Hub Natural Gas Tick Adjusted: $4.85</td>
+<td class="py-space-sm px-space-sm text-on-surface">0.392 kg/s</td>
+<td class="py-space-sm px-space-sm text-outline">$900.00 / t</td>
+<td class="py-space-sm px-space-sm text-secondary font-bold">+$161.10</td>
+<td class="py-space-sm px-space-sm font-bold text-primary text-right">$361,125.40</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-sm font-mono text-outline">14:00:00 UTC</td>
+<td class="py-space-sm px-space-sm">Hourly Statutory Assessment Batch Run #14</td>
+<td class="py-space-sm px-space-sm text-on-surface">1.42 t CH4</td>
+<td class="py-space-sm px-space-sm text-outline">OMB 2024 SC-CH4</td>
+<td class="py-space-sm px-space-sm text-error font-bold">+$25,033.18</td>
+<td class="py-space-sm px-space-sm font-bold text-primary text-right">$360,964.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></main></div></body></html>

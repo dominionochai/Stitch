@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-container": "#ee9800",
+          "surface": "#10141a",
+          "on-tertiary": "#67001b",
+          "surface-container-highest": "#31353c",
+          "on-background": "#dfe2eb",
+          "outline-variant": "#3b4a44",
+          "on-secondary-fixed-variant": "#653e00",
+          "surface-dim": "#10141a",
+          "on-tertiary-container": "#b80538",
+          "surface-variant": "#31353c",
+          "outline": "#84948d",
+          "tertiary-container": "#ffc7c9",
+          "on-tertiary-fixed": "#40000d",
+          "on-tertiary-fixed-variant": "#92002a",
+          "surface-tint": "#00e0b3",
+          "on-secondary": "#472a00",
+          "surface-bright": "#353940",
+          "surface-container-high": "#262a31",
+          "tertiary-fixed": "#ffdadb",
+          "on-primary": "#00382b",
+          "on-secondary-fixed": "#2a1700",
+          "tertiary-fixed-dim": "#ffb2b7",
+          "primary-fixed": "#32fece",
+          "error-container": "#93000a",
+          "primary-fixed-dim": "#00e0b3",
+          "background": "#10141a",
+          "tertiary": "#ffeded",
+          "inverse-surface": "#dfe2eb",
+          "inverse-on-surface": "#2d3137",
+          "on-primary-fixed": "#002118",
+          "surface-container-lowest": "#0a0e14",
+          "secondary-fixed-dim": "#ffb95f",
+          "error": "#ffb4ab",
+          "on-error-container": "#ffdad6",
+          "on-surface": "#dfe2eb",
+          "on-primary-container": "#006852",
+          "primary-container": "#00f0c0",
+          "inverse-primary": "#006b54",
+          "secondary-fixed": "#ffddb8",
+          "surface-container": "#1c2026",
+          "on-error": "#690005",
+          "primary": "#bbffe6",
+          "on-surface-variant": "#b9cac2",
+          "on-secondary-container": "#5b3800",
+          "secondary": "#ffb95f",
+          "on-primary-fixed-variant": "#00513f",
+          "surface-container-low": "#181c22"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "gutter": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "gutter-desktop": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin-desktop": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Space Grotesk"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Space Grotesk"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "JetBrains Mono"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "label-md": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface select-none"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_12px_rgba(0,240,192,0.1)]"><div class="h-20 w-full px-gutter-desktop flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center p-space-xs bg-surface-container-low rounded"><span class="material-symbols-outlined text-primary-container animate-pulse text-lg">satellite_alt</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary tracking-wider">METHANE COPILOT</span><span class="font-label-sm text-label-sm text-outline-variant">//</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-widest">ORBITAL TELEMETRY</span></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="flex h-1.5 w-1.5 rounded-full bg-primary-container animate-ping"></span><span>LIVE SYNC</span><span class="text-outline-variant">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">LAT 31.8457° N • LON 102.3678° W</span><span class="text-outline-variant">|</span><span class="text-primary-fixed-dim font-label-sm text-label-sm">SIGNAL LOCK: 99.84%</span></div></div><div class="hidden xl:flex items-center px-space-md py-space-xs bg-surface-container-low rounded"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase">EVENT ID: PERMIAN-CH4-9842 • SATELLITE: ENMAP-HYPER • ACQUISITION: 14:28:09 UTC</span></div></div><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm px-space-md py-space-xs bg-error-container/20 rounded"><span class="material-symbols-outlined text-error text-base animate-pulse">warning</span><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-error">ACTIVE PLUME DETECTED</span><span class="font-label-md text-label-md text-tertiary-fixed font-bold">1,420 kg/hr ± 42</span></div></div><div class="hidden md:flex flex-col items-end px-space-md py-space-xs bg-surface-container-low rounded"><span class="font-label-sm text-label-sm text-outline">UTC MISSION CLOCK</span><span class="font-label-md text-label-md text-on-background tracking-wider">2025.05.18 // 14:42:19 UTC</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-primary-fixed">OP-882 // FLIGHT LEAD</span><span class="font-label-sm text-label-sm text-outline">SPECTRAL ANALYSIS</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UKrXPLIYKIVq-3RZATblIHhyDe7PRr9G6_RpdZBj-Xalxo_nPIiRvc30lSyh0j1aVhAHhMzJqnIyVGk-On3hcvJX2ta86lCCc61x7B_MG9_TIusBOxrf79upV21kZwsTT2qBTQinV7E--oRqhnExCzIK6YiN2ixdQd-DoNKDKJ0pCSpgkHm6GaHCyMUF8G_s6nSpWGtC4TIpPXZv17jQqIyfZ-PoTJW3mOBuFTA4n4CWFciPm44Wv5xPfF"/></div></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline-variant"><span class="text-primary-container font-label-sm text-label-sm">LIFECYCLE PIPELINE</span><span>[</span><span class="text-on-surface">DETECT</span><span class="text-primary-container">→</span><span class="text-on-surface">BILL</span><span class="text-primary-container">→</span><span class="text-on-surface">HEAL</span><span class="text-primary-container">→</span><span class="text-on-surface">CREDIT</span><span>]</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold"><a aria-current="page" class="px-space-md py-space-xs rounded transition-all flex items-center gap-space-xs bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold" data-path="plume-detection" href="#"><span>01 SOURCE</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-error animate-ping"></span></a><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="tax-billing" href="#"><span>02 BILL</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span></a><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="field-dispatch" href="#"><span>03 HEAL</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-outline"></span></a><a class="px-space-md py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="carbon-registry" href="#"><span>04 CREDIT</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span></a></nav><div class="hidden lg:flex items-center gap-space-md font-label-sm text-label-sm text-outline"><span class="text-outline-variant">HUD CALIBRATED // WGS84 EPSG:4326</span></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md px-space-sm"><div class="flex flex-col gap-space-md"><div class="px-space-sm flex items-center justify-between"><span class="font-label-sm text-label-sm text-outline tracking-wider">INSTRUMENT RAILS</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container">ONLINE</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md font-bold"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-all bg-primary-container text-on-primary-container font-label-md text-label-md font-bold" data-path="plume-detection" href="#"><span class="material-symbols-outlined text-base">radar</span>Plume Detection</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="satellite-orbit" href="#"><span class="material-symbols-outlined text-base">public</span>Constellation Array</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="spectral-flux" href="#"><span class="material-symbols-outlined text-base">ssid_chart</span>Spectral Radiance</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tax-billing" href="#"><span class="material-symbols-outlined text-base">receipt_long</span>WEC Fiscal Ledger</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="field-dispatch" href="#"><span class="material-symbols-outlined text-base">engineering</span>Repair Crews</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="carbon-registry" href="#"><span class="material-symbols-outlined text-base">token</span>Carbon Mint</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-telemetry" href="#"><span class="material-symbols-outlined text-base">terminal</span>Sensor Raw Feed</a></nav></div><div class="flex flex-col gap-space-sm px-space-sm pt-space-md bg-surface-container-low/40 rounded"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-outline">SENSOR POD 04</span><span class="text-primary">OPTIMAL</span></div><div class="w-full bg-surface-container-highest h-1 rounded"><div class="bg-primary-container h-1 rounded" style="width: 86%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-outline-variant"><span>FLUX: 2,341 nm</span><span>SNR: 34.2 dB</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full px-gutter-desktop min-h-screen bg-surface-container-lowest"><div class="flex flex-col w-full pb-space-xl">
+<!-- PRIMARY ORBITAL HUD HERO VIEWPORT -->
+<div class="relative w-full h-[901px] rounded-xl overflow-hidden bg-surface-container-lowest shadow-2xl flex flex-col justify-between p-space-md select-none">
+<!-- BACKGROUND SATELLITE TERRAIN & GEOSPATIAL MATRIX -->
+<div class="absolute inset-0 z-0 overflow-hidden">
+<!-- High contrast satellite terrain imagery -->
+<div class="w-full h-full bg-cover bg-center brightness-[0.28] contrast-[1.35] filter saturate-50" data-alt="Orthographic high-altitude satellite imagery of Permian Basin Texas desert terrain at night with faint industrial pad infrastructure and dark rugged topography, aerospace palette, deep obsidian, charcoal slate, subtle contrast" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeYnzUvxCo1sHWRRZcOD4aCzR-NdMZj8r9PhaRJzYYtriHYN2L62ZlZw6-eYZ-MNUtpWclhYkXpExwfLolI72c-ryFHLlRa4CPcCGvJTCGp-P-ACVbAuZ7nEbBRoSkMo-dThpzEh9h_aWTM2fOoSv9DThtV4-hz-LxFZ2ZDcG8_nS_8I0u0cTlxiGiR5e799iGMoYiUDkSStj9uAwKPtfbqEJvZIpnyAxlPx9aO1oY7Xss3CMc5sKKcA')">
+</div>
+<!-- Scanline Tactical Mesh -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary-container/[0.02] to-surface-container-lowest/80 pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_40%,_rgba(10,14,20,0.85)_100%)] pointer-events-none"></div>
+<!-- Orthogonal Reticle Grid (Inline SVG) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="80" id="hud-grid" patternunits="userSpaceOnUse" width="80">
+<path class="text-outline-variant/30" d="M 80 0 L 0 0 0 80" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+<circle class="text-primary-container/40" cx="0" cy="0" fill="currentColor" r="1.5"></circle>
+</pattern>
+<radialgradient cx="68%" cy="58%" id="plumeGradient" r="65%">
+<stop offset="0%" stop-color="#ee9800" stop-opacity="0.9"></stop>
+<stop offset="25%" stop-color="#ffb95f" stop-opacity="0.65"></stop>
+<stop offset="55%" stop-color="#00f0c0" stop-opacity="0.45"></stop>
+<stop offset="85%" stop-color="#006852" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#10141a" stop-opacity="0"></stop>
+</radialgradient>
+<radialgradient cx="50%" cy="50%" id="sourceHalo" r="50%">
+<stop offset="0%" stop-color="#ffb4ab" stop-opacity="0.8"></stop>
+<stop offset="30%" stop-color="#ee9800" stop-opacity="0.5"></stop>
+<stop offset="70%" stop-color="#00f0c0" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#00f0c0" stop-opacity="0"></stop>
+</radialgradient>
+<lineargradient id="vectorGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00f0c0" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#ee9800" stop-opacity="0.2"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#hud-grid)" height="100%" width="100%"></rect>
+<!-- Topographic Coordinate Ticks -->
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4 8" stroke-width="1" x1="20%" x2="20%" y1="0" y2="100%"></line>
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4 8" stroke-width="1" x1="68%" x2="68%" y1="0" y2="100%"></line>
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4 8" stroke-width="1" x1="0" x2="100%" y1="58%" y2="58%"></line>
+<!-- THE BACK-TRACED METHANE PLUME POLYGON -->
+<!-- Plume expands downwind toward East-Northeast from origin point (680, 480) relative -->
+<g class="transition-all duration-700">
+<!-- Outer dispersion envelope -->
+<path d="M 680 480 C 620 440, 480 390, 310 330 C 180 280, 90 230, 40 210 C 60 380, 160 490, 320 540 C 470 590, 610 520, 680 480 Z" fill="url(#plumeGradient)" filter="blur(14px)"></path>
+<!-- Concentrated core channel -->
+<path d="M 680 480 C 630 450, 520 420, 400 380 C 270 330, 190 310, 140 290 C 200 370, 310 440, 440 460 C 560 480, 640 470, 680 480 Z" fill="#00f0c0" fill-opacity="0.25" filter="blur(6px)"></path>
+<!-- Super-emitter Core Thermal Spine -->
+<path d="M 680 480 C 645 462, 570 445, 490 422 C 430 405, 370 392, 330 385 C 380 415, 460 435, 540 448 C 610 460, 660 472, 680 480 Z" fill="#ee9800" fill-opacity="0.5" filter="blur(3px)"></path>
+<!-- Back-Trace Telemetry Vector Line -->
+<path class="opacity-80" d="M 120 285 Q 380 390 680 480" fill="none" stroke="#00f0c0" stroke-dasharray="6 4" stroke-width="2"></path>
+</g>
+<!-- RADAR TARGET RINGS AT PINPOINT SOURCE (Lat 31°48'22.4"N, Long 103°12'44.1"W) -->
+<g transform="translate(680, 480)">
+<!-- Ambient pulse field -->
+<circle cx="0" cy="0" fill="url(#sourceHalo)" r="80"></circle>
+<!-- Animated concentric ripples -->
+<circle class="animate-ping opacity-75" cx="0" cy="0" fill="none" r="18" stroke="#ffb95f" stroke-width="1.5" style="animation-duration: 2.8s;"></circle>
+<circle class="opacity-60" cx="0" cy="0" fill="none" r="38" stroke="#00f0c0" stroke-dasharray="3 3" stroke-width="1"></circle>
+<circle class="opacity-40" cx="0" cy="0" fill="none" r="64" stroke="#84948d" stroke-dasharray="2 6" stroke-width="0.75"></circle>
+<!-- Precision Reticle Crosshair -->
+<line stroke="#00f0c0" stroke-width="2" x1="-24" x2="-8" y1="0" y2="0"></line>
+<line stroke="#00f0c0" stroke-width="2" x1="8" x2="24" y1="0" y2="0"></line>
+<line stroke="#00f0c0" stroke-width="2" x1="0" x2="0" y1="-24" y2="-8"></line>
+<line stroke="#00f0c0" stroke-width="2" x1="0" x2="0" y1="8" y2="24"></line>
+<!-- Source Origin Point -->
+<circle class="shadow-lg" cx="0" cy="0" fill="#ffb4ab" r="5"></circle>
+<circle cx="0" cy="0" fill="#690005" r="2"></circle>
+</g>
+<!-- SENSOR WAYPOINTS ON DISPERSION SPINE -->
+<!-- Waypoint 1: Downwind boundary -->
+<g transform="translate(240, 335)">
+<circle cx="0" cy="0" fill="#00f0c0" r="4"></circle>
+<circle class="opacity-60" cx="0" cy="0" fill="none" r="8" stroke="#00f0c0" stroke-width="1"></circle>
+<line class="opacity-60" stroke="#00f0c0" stroke-width="1" x1="0" x2="-30" y1="0" y2="-30"></line>
+</g>
+<!-- Waypoint 2: Mid-plume condensation zone -->
+<g transform="translate(460, 415)">
+<circle cx="0" cy="0" fill="#ffb95f" r="4"></circle>
+<circle class="opacity-60" cx="0" cy="0" fill="none" r="9" stroke="#ffb95f" stroke-width="1"></circle>
+<line class="opacity-60" stroke="#ffb95f" stroke-width="1" x1="0" x2="-20" y1="0" y2="-45"></line>
+</g>
+<!-- Waypoint 3: Throat threshold -->
+<g transform="translate(615, 460)">
+<circle cx="0" cy="0" fill="#ffb4ab" r="4"></circle>
+<circle class="opacity-75" cx="0" cy="0" fill="none" r="10" stroke="#ffb4ab" stroke-width="1"></circle>
+<line class="opacity-75" stroke="#ffb4ab" stroke-width="1" x1="0" x2="35" y1="0" y2="-35"></line>
+</g>
+</svg>
+</div>
+<!-- HUD OVERLAY LAYER: TOP BAR TELEMETRY -->
+<div class="relative z-10 flex flex-wrap items-start justify-between gap-gutter pointer-events-none">
+<!-- Coordinate Matrix & Block Identification -->
+<div class="pointer-events-auto flex flex-col gap-space-xs bg-surface-container-lowest/85 backdrop-blur-md p-space-md rounded-lg shadow-xl max-w-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">BAYESIAN SOURCE INVERSION // ACTIVE RETICLE</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">LAT 31°48'22.4"N</span>
+</div>
+<div class="flex items-baseline gap-space-xs -mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">LON 103°12'44.1"W</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary-fixed-dim">PERMIAN BASIN • BLOCK 14-B</span>
+<span class="font-label-sm text-label-sm text-outline-variant">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DELAWARE SUB-BASIN COMPLEX</span>
+</div>
+</div>
+<!-- Confidence HUD Badge & Sensor Fusion Score -->
+<div class="pointer-events-auto flex flex-col items-end gap-space-xs bg-surface-container-lowest/85 backdrop-blur-md p-space-md rounded-lg shadow-xl">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-outline">SOURCE CONFIDENCE INDEX</span>
+<div class="flex items-center justify-end gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary-container font-bold leading-none">87%</span>
+<span class="font-label-md text-label-md text-primary font-semibold">HIGH</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs flex gap-0.5">
+<div class="h-full bg-primary-container rounded" style="width: 87%"></div>
+<div class="h-full bg-outline-variant/40 flex-1 rounded"></div>
+</div>
+<div class="flex items-center justify-between w-full gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>SPECTRAL CORR: <strong class="text-on-surface">0.934</strong></span>
+<span>BAYESIAN INVERSION: <strong class="text-primary-fixed">0.871 σ</strong></span>
+</div>
+</div>
+</div>
+<!-- FLOATING IN-SCENE HUD LABELS (Anchored to terrain feature points) -->
+<div class="relative z-10 w-full h-full pointer-events-none">
+<!-- IDENTIFIED SOURCE EQUIPMENT CALLOUT (Positioned near Compressor C-04) -->
+<div class="absolute right-[22%] top-[48%] pointer-events-auto flex items-start gap-space-sm">
+<div class="w-8 h-[1px] bg-secondary mt-3"></div>
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-lowest/90 backdrop-blur-md rounded shadow-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider">BACK-TRACED SOURCE DETECTED</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Compressor Unit C-04</span>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-secondary-fixed">FLANGE SEAL G-12 HIGH-PRESSURE BLEED</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 pt-1 bg-surface-container/60 px-space-xs rounded font-label-sm text-label-sm">
+<span class="text-outline">OPERATOR:</span>
+<span class="text-on-surface font-semibold">APEX MIDSTREAM LLC</span>
+<span class="text-error font-bold">CH4 CORE: 8,760 ppm</span>
+</div>
+</div>
+</div>
+<!-- IN-SITU WAYPOINT 1 CALLOUT (Downwind) -->
+<div class="absolute left-[13%] top-[24%] pointer-events-auto flex flex-col p-space-xs px-space-sm bg-surface-container-lowest/80 backdrop-blur-md rounded shadow-md">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-bold">WP-01 // DOWNWIND FRINGE</span>
+<div class="flex items-baseline gap-space-xs font-label-md text-label-md text-on-surface font-semibold">
+<span>1,890</span><span class="font-label-sm text-label-sm text-outline">ppm-m</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ABS: 2,342 nm • 14:12:04 UTC</span>
+</div>
+<!-- IN-SITU WAYPOINT 2 CALLOUT (Plume Throat) -->
+<div class="absolute left-[33%] top-[34%] pointer-events-auto flex flex-col p-space-xs px-space-sm bg-surface-container-lowest/80 backdrop-blur-md rounded shadow-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim font-bold">WP-02 // DENSITY SURGE</span>
+<div class="flex items-baseline gap-space-xs font-label-md text-label-md text-on-surface font-semibold">
+<span>3,420</span><span class="font-label-sm text-label-sm text-outline">ppm-m</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ABS: 2,344 nm • 14:18:22 UTC</span>
+</div>
+<!-- WIND VECTOR OVERLAY (Dynamic atmospheric dispersion marker) -->
+<div class="absolute left-[6%] bottom-[16%] pointer-events-auto flex items-center gap-space-md p-space-md bg-surface-container-lowest/85 backdrop-blur-md rounded-lg shadow-xl">
+<div class="relative w-12 h-12 rounded-full bg-surface-container flex items-center justify-center">
+<!-- Compass Arrow angled at 248 degrees -->
+<div class="transform -rotate-[112deg] flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-container text-2xl animate-pulse">navigation</span>
+</div>
+<span class="absolute top-0.5 text-[8px] font-label-sm text-outline">N</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-bold">SURFACE FLUID DYNAMICS</span>
+<span class="px-1 py-0.2 bg-primary-container/20 text-primary font-label-sm text-label-sm rounded text-[9px]">INVERTED</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">WIND: 248° WSW @ 14.2 kt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BOUNDARY LAYER: 820m AGL • STABILITY CLASS: D</span>
+</div>
+</div>
+<!-- SCALE BAR & ELEVATION CONTOUR -->
+<div class="absolute right-[4%] top-[12%] pointer-events-auto flex flex-col items-end gap-space-xs p-space-sm bg-surface-container-lowest/80 backdrop-blur-md rounded">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span>ORTHO ELEV: 874m AMSL</span>
+<span class="text-outline-variant">|</span>
+<span>GSD: 0.85m/px</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center justify-between w-36 font-label-sm text-label-sm text-outline mb-0.5">
+<span>0</span>
+<span>500m</span>
+<span>1000m</span>
+</div>
+<div class="w-36 h-1.5 bg-surface-container-highest rounded flex">
+<div class="w-1/2 h-full bg-on-surface"></div>
+<div class="w-1/2 h-full bg-on-surface-variant"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- HUD OVERLAY LAYER: BOTTOM ACTION DOCK -->
+<div class="relative z-10 flex flex-wrap items-end justify-between gap-gutter pointer-events-none mt-auto">
+<!-- Telemetry Metric Quad Strip -->
+<div class="pointer-events-auto flex flex-wrap items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md p-space-xs rounded-xl shadow-2xl">
+<!-- Metric 1: Rate -->
+<div class="flex flex-col px-space-md py-space-sm rounded bg-surface-container-low/60 min-w-[170px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">EMISSION RATE</span>
+<span class="material-symbols-outlined text-error text-sm">trending_up</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-xl text-headline-xl text-error font-bold leading-none">1,420</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">kg/hr</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim">± 85 kg/hr (95% CI)</span>
+</div>
+<!-- Metric 2: Cumulative Mass -->
+<div class="flex flex-col px-space-md py-space-sm rounded bg-surface-container-low/60 min-w-[170px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">MASS DISCHARGED</span>
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-xl text-headline-xl text-secondary-fixed-dim font-bold leading-none">12.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">metric tonnes</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SINCE 05:40 UTC (~8.7h)</span>
+</div>
+<!-- Metric 3: Observation Sensor Multi-Band -->
+<div class="flex flex-col px-space-md py-space-sm rounded bg-surface-container-low/60 min-w-[200px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">SENSOR SYNC</span>
+<span class="material-symbols-outlined text-primary-container text-sm">satellite_alt</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-1.5 py-0.5 bg-primary-container/20 rounded font-label-sm text-label-sm text-primary font-bold">GHGSat-C3</span>
+<span class="text-outline-variant">+</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-label-sm text-label-sm text-on-surface">Sentinel-5P</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">SWIR BAND 7 / 2305–2385 nm</span>
+</div>
+<!-- Metric 4: Plume Footprint Area -->
+<div class="flex flex-col px-space-md py-space-sm rounded bg-surface-container-low/60 min-w-[150px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">PLUME AREA</span>
+<span class="material-symbols-outlined text-outline text-sm">crop_free</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold leading-none">1.48</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">km²</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">DISPERSION AXIS: 2.1 km</span>
+</div>
+</div>
+<!-- Action Control: Transition to Step 02 (Billing) -->
+<div class="pointer-events-auto flex items-center gap-space-md bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-xl shadow-2xl">
+<div class="flex flex-col text-right pl-space-sm">
+<span class="font-label-sm text-label-sm text-outline">NEXT LIFECYCLE ACTION</span>
+<span class="font-label-md text-label-md text-secondary-fixed-dim font-bold">WEC PENALTY ACCRUAL</span>
+</div>
+<button class="flex items-center gap-space-sm px-space-lg py-space-md bg-primary-container text-on-primary-container font-headline-md text-headline-md font-bold rounded-lg shadow-[0_0_20px_rgba(0,240,192,0.45)] hover:shadow-[0_0_28px_rgba(0,240,192,0.7)] hover:bg-primary-fixed transition-all cursor-pointer" onclick="document.querySelector('a[data-path=\'tax-billing\']')?.click()">
+<span>PROCEED TO BILLING IMPACT</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECONDARY MISSION TELEMETRY DIAGNOSTIC TRAY -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-space-md w-full">
+<!-- Panel 1: Spectral Radiance Peak Profile -->
+<div class="flex flex-col p-space-md bg-surface-container-low rounded-lg shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">// SWIR ABSORPTION COINCIDENCE</span>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">PEAK: 2,345 nm</span>
+</div>
+<!-- Mini Sparkline / Absorption Graph -->
+<div class="w-full h-16 flex items-end gap-1 pt-space-xs">
+<div class="flex-1 bg-surface-container-highest h-[30%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[45%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[40%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[60%] rounded-t"></div>
+<div class="flex-1 bg-primary-container/40 h-[75%] rounded-t"></div>
+<div class="flex-1 bg-primary-container/80 h-[92%] rounded-t"></div>
+<div class="flex-1 bg-primary-container h-[100%] rounded-t shadow-[0_0_8px_rgba(0,240,192,0.5)]"></div>
+<div class="flex-1 bg-secondary h-[88%] rounded-t"></div>
+<div class="flex-1 bg-secondary/60 h-[58%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[35%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[25%] rounded-t"></div>
+<div class="flex-1 bg-surface-container-highest h-[18%] rounded-t"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-xs">
+<span>2,280 nm</span>
+<span class="text-primary font-bold">CH4 OVERTONE RESONANCE</span>
+<span>2,390 nm</span>
+</div>
+</div>
+<!-- Panel 2: Operational Asset Ledger Lookup -->
+<div class="flex flex-col p-space-md bg-surface-container-low rounded-lg shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">// INFRASTRUCTURE REGISTRY RECORD</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">ASSET #TX-PERM-8841</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Facility Name:</span>
+<span class="text-on-surface font-semibold">Red Bluff Booster Station #04</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Regulatory Permit ID:</span>
+<span class="text-on-surface font-mono">EPA-R6-TX-99214-CH</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Active Sub-Unit:</span>
+<span class="text-primary font-semibold">Cat G3616 A4 Engine / Ariel JGZ</span>
+</div>
+</div>
+</div>
+<!-- Panel 3: Inversion Methodology & Ephemeris -->
+<div class="flex flex-col p-space-md bg-surface-container-low rounded-lg shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">// ORBITAL EPHEMERIS &amp; SOLVER</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">LAGRANGIAN PARTICLE</span>
+</div>
+<div class="flex flex-col gap-space-xs font-label-sm text-label-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Satellite Nadir Offset:</span>
+<span class="text-on-surface">14.2° Pitch • 0.8° Roll</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Dispersion Model:</span>
+<span class="text-on-surface">WRF-STILT v4.2 Retro-trajectory</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Albedo Terrain Match:</span>
+<span class="text-primary-container">0.962 (High Dry Scrub Matrix)</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
